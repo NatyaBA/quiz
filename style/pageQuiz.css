@@ -1,0 +1,187 @@
+/*  HEADER  */
+* {
+    margin: 0 auto;
+}
+
+:root {
+    background: url(../fon/fon.png);
+}
+
+.logo__box,
+.score {
+    padding: 0.5%;
+    color: #00a7cc;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.logo {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.header__box {
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    border-radius: 10px;
+    width: 78%;
+    margin-left: 11%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.header__page {
+    margin: 0px;
+    width: 16.667%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  MAIN  */
+
+.main {
+    width: 80%;
+    height: 40%;
+    margin-top: 2%;
+    display: block;
+}
+
+.quastion {
+    background-color: white;
+    width: 98%;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    display: flex;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.answer__box,
+.ans__box  {
+    display: flex;
+}
+
+.answer,
+.answers {
+    width: 48%;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+}
+
+
+.option {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.option.correct {
+    color:#6b8e23;
+}
+
+
+.option.incorrect {
+    color:rgb(220, 56, 56);
+}
+
+.nameBird {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.headBird {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.active {
+   background-color: #00a7cc;
+   transform: scale(1.1, 1.1);
+}
+
+.inactive {
+    background-color: white;
+    transform: scale(1, 1);
+    border-radius: 10px;
+}
+
+.nameSpecies {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.imgBird {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.discription {
+    margin: 5px;
+    font-size: 17px;
+}
+
+.main_modal {
+    width: 78%;
+    height: 30%;
+    font-size: 45px;
+    background-color: white;
+    text-align: center;
+    display: none;
+    margin-top: 2%;
+}
+
+.game_again {
+    background-color: white;
+    width: 15%;
+    height: 5%;
+}
+
+.game_again:hover {
+    background-color: white;
+    width: 17%;
+    height: 7%;
+}
+
+.birdAudio {
+    width: 150px;
+    height: 20px;
+    margin-top: 4%;
+}
+
+/*  FOOTER  */
+
+.footer__button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: white;
+    width: 78%;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 11%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.footer__button:disabled {
+    opacity: 0.5;
+}
+
+.game_again a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/pageQuiz.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="logo__box">
+            <div class="score">Score: <span class="count">0</span></div>
+        </div>
+        <div class="header__box">
+            <div class="header__page">События и опирации над ними</div>
+            <div class="header__page">Классическое определение вероятности, комбинаторика</div>
+            <div class="header__page">Геометрические вероятности</div>
+            <div class="header__page">Условная вероятность</div>
+            <div class="header__page">Формула полной вероятности, формула Байеса</div>
+            <div class="header__page">Схема Бернулли</div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="quastion">
+            <div >
+                <div class="nameBird"></div>
+            </div>
+        </div>
+        <div class="answer__box">
+            <div class="answers"></div>
+            <div class="answer"></div>
+        </div>
+    </main>
+
+    <main class="main_modal">
+        <div >
+           Ваш результат: <span class="quastion_result">0</span>
+        </div>
+        <div class="button"></div>
+    </main>
+
+    <footer class="footer">
+        <button class="footer__button">Следующий уровень</button>
+    </footer>
+    <audio id="sound" src="pr.ogg"></audio>
+    <audio id="sound2" src="nepr.mp3"></audio>
+    <script src="code/bd.js"></script>
+    <script src="code/pageQuiz.js"></script>
+</body>
+</html>

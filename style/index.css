@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    background: url(../fon/fon.png);
+}
+
+.link {
+    display: flex;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: rgb(232, 139, 0)
+}
+
+main button {
+    width:30%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(29, 53, 28);
+}
+
+main {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+main button:hover {
+    background-color: rgb(8, 38, 24);
+}
