@@ -79,7 +79,7 @@ function nextQuestion(i) {
         console.log(score)
         if (score != 30) {
             result_but.innerHTML = "<button class='game_again' >Пройти еще раз</button><br>" +
-            "<button class='game_again'><a href='test.html'>Вернутся на стартовую страницу</a></button>";
+            "<button class='game_again'><a href='index.html'>Вернутся на стартовую страницу</a></button>";
             result_but.addEventListener('click', () => location = 'pageQuiz.html');
         }
     }

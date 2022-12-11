@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="scores">
+            <a id="highscores-link">Посмотреть баллы</a>
+        </div>
+        <div id="timer" class="timer">
+            Время: 75
+        </div>
+    </header>
+
+    <section id="start-container" class="start-quiz">
+        <h1>Викторина по Теории вероятности и математической статистике</h1>
+        <p>
+            У тебя есть 75 секунд, чтобы попытаться набрать наибольшее количество баллов в викторине.
+
+За каждый правильный ответ ты получишь 10 балов.
+
+ Нажми «Начать викторину», когда будешь готов или «Тренироваться».
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Начать викторину</button>
+            <a href="pageQuiz.html"><button>Тренироваться</button></a>
+        </div>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Следующий</button>
+        </div>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <div>
+                <label id="initials-label">
+                    Введите свое имя, чтобы сохранить счет:</label>
+            </div>
+            <div>
+                <input type="text" id="initials-field" maxlength="3" placeholder="Введите свое имя" />
+            </div>
+            <div>
+                <button id="submit-btn">Отправить</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Счет</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Начать занаво</button>
+                <button id="clear-btn">Очистить</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./code/questions.js"></script>
+    <script src="./code/logic.js"></script>
+</body>
+
+</html>
